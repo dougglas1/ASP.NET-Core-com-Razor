@@ -1,0 +1,21 @@
+[
+  {
+    "outputFileName": "wwwroot/lib/bundle.js",
+    "inputFiles": [
+      "wwwroot/lib/fullcalendar/fullcalendar.js",
+      "wwwroot/lib/fullcalendar/gcal.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/bundle.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+    ]
+  }
+]
