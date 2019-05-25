@@ -78,7 +78,7 @@ namespace WebApplication1.Controllers
         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult AtualizarCarro(int id, Carro carro)
+        public IActionResult AtualizaCarro(int id, Carro carro)
         {
             if (id.Equals(null))
                 return NotFound();
@@ -102,7 +102,7 @@ namespace WebApplication1.Controllers
         {
             if (id.Equals(null))
                 return NotFound();
-
+            
             var carro = _contexto.Carros.FirstOrDefault(x => x.CarroId.Equals(id));
 
             return View(carro);

@@ -5,7 +5,6 @@ C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\bin\Debug
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.pdb
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.Views.dll
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.Views.pdb
-C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csprojAssemblyReference.cache
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorAssemblyInfo.cache
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorAssemblyInfo.cs
@@ -32,4 +31,6 @@ C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CopyComplete
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Carros\NovoCarro.g.cshtml.cs
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Carros\Index.g.cshtml.cs
+C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Carros\Detalhes.g.cshtml.cs
+C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Carros\Excluir.g.cshtml.cs
 C:\Users\dougg\Desktop\Desenvolvimento\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Carros\AtualizaCarro.g.cshtml.cs
