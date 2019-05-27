@@ -1,0 +1,86 @@
+﻿@model X.PagedList.IPagedList<WebApplication1.Models.Tarefas>
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<form asp-controller="Tarefas" asp-action="Index" method="post">
+    <input class="form-control" name="txtProcurar"/><button type="submit">Procurar</button>
+</form>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Inicio
+            </th>
+            <th>
+                Fim
+            </th>
+            <th>
+                Importancia
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.OrderBy(x => x.Nome)) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descrição)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fim)
+            </td>
+
+            @if (item.Importancia.Equals("Baixa"))
+            {
+                <td class="text-info">
+                    @Html.DisplayFor(modelItem => item.Importancia)
+                </td>
+            }
+
+            @if (item.Importancia.Equals("Média"))
+            {
+                <td class="text-warning">
+                    @Html.DisplayFor(modelItem => item.Importancia)
+                </td>
+            }
+
+            @if (item.Importancia.Equals("Critica"))
+            {
+                <td class="text-danger">
+                    @Html.DisplayFor(modelItem => item.Importancia)
+                </td>
+            }
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TarefasId" class="btn btn-info">Edit</a>
+                <a asp-action="Details" asp-route-id="@item.TarefasId" class="btn btn-warning">Details</a>
+                <a asp-action="Delete" asp-route-id="@item.TarefasId" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@Html.PagedListPager(Model, pagina => Url.Action("Index", new { pagina }))

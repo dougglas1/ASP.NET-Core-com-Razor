@@ -1,0 +1,24 @@
+﻿@model WebApplication1.ViewModels.TodosViewModel
+@{
+    ViewData["Title"] = "Todos";
+}
+
+<br />
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Alunos</div>
+
+    @foreach (var item in Model.Alunos)
+    {
+    <div>@item.Nome</div>
+    }
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Matérias</div>
+
+    @foreach (var item in Model.Materias)
+    {
+        <div>@item.Nome</div>
+    }
+</div>

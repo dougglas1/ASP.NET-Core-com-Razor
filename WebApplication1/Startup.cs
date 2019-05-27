@@ -59,9 +59,15 @@ namespace WebApplication1
             {
                 //routes.MapRoute("teste", "sobre/sobrenos", defaults: new { Controller = "Home", Action = "About" });
 
+                // Utilizar o CRUD Carros
+                //routes.MapRoute(
+                //    name: "default",
+                //    template: "{controller=Carros}/{action=Index}/{id?}");
+                
+                // Utilizar o CRUD Tarefas
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Carros}/{action=Index}/{id?}");
+                    template: "{controller=Menu}/{action=Index}/{id?}");
             });
         }
     }

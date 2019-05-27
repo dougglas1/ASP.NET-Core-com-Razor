@@ -24,32 +24,36 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">WebApplication1</a>
+                <a asp-area="" asp-controller="Menu" asp-action="Index" class="navbar-brand">Menu</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Carros" asp-action="Index">Carros</a></li>
+                    <li><a asp-area="" asp-controller="Tarefas" asp-action="Index">Tarefas</a></li>
+                    <li><a asp-area="" asp-controller="Pessoas" asp-action="Index">Pessoas</a></li>
+                    <li><a asp-area="" asp-controller="Moedas" asp-action="Index">Moedas</a></li>
+                    <li><a asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
+                    <li><a asp-area="" asp-controller="Cliente2" asp-action="Index">Cliente2</a></li>
+                    <li><a asp-area="" asp-controller="Cliente3" asp-action="Index">Cliente3</a></li>
+                    <li><a asp-area="" asp-controller="Person" asp-action="Index">Person</a></li>
+                    <li><a asp-area="" asp-controller="Alunos" asp-action="Index">Alunos</a></li>
+                    <li><a asp-area="" asp-controller="Materias" asp-action="Index">Materias</a></li>
+                    <li><a asp-area="" asp-controller="Alunos" asp-action="Todos">Alunos e Materias</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <partial name="_CookieConsentPartial" />
-
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2019 - WebApplication1</p>
-        </footer>
     </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
         <script src="~/lib/bundle.js" asp-append-version="true"></script>
+        <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
@@ -58,6 +62,7 @@
                 crossorigin="anonymous"
                 integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
         </script>
+        <script src="~/lib/Chart.js/Chart.bundle.min.js"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
         <script src="~/lib/bundle.js" asp-append-version="true"></script>
     </environment>
